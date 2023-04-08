@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>OSCORP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- LOGO FOR SITE -->
+
+  <link rel='icon' href='images/logo.png' type='image/x-icon'>
+  <!-- CSS STYLESHEETS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/7877a39906.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <section class="coloured-section" id="virtualtour">
+  <nav class="navbar navbar-expand-lg py-0 navbar-dark">
+    <div class="row">
+      <div class="col-lg-6">
+        <a class="navbar-brand" href="#"> <img src="{{ url_for('static', filename='images/oscorp.png') }}" class="img-fluid" /></a>
+      </div>
+      <div class="col-lg-6">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#about"> About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#features">Our Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Health Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>     
+  </nav>
+</section>
+
+
+  <section class="coloured-section" id="title">
+    <img class="img-fluid" src="{{ url_for('static', filename='images/oscorp-hospital.png') }}"/>
+                <!-- <button class="btn btn-outline-light btn-lg download-button" type="button"><i class="fa-brands fa-google-play"></i>Download</button> -->
+    <div class="slide">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Oscorp Infrastructure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reception</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Emergency Ward</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Diagnostic Ward</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Super Speciality Room</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-fluid title-container" id="about">
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="big-heading">About us</h1>
+            <p class="about">Welcome to our hospital services! We are a state-of-the-art medical facility that provides exceptional healthcare services to our patients. Our team of highly trained medical professionals includes doctors, nurses, and support staff who work tirelessly to ensure that you receive the best possible care. At our hospital, we offer a wide range of services, including emergency care, inpatient care, outpatient care, surgical services, diagnostic testing, and more. 
+             Our advanced technology and equipment allow us to provide accurate diagnoses and effective treatments for a variety of medical conditions. We are committed to making your experience with us as comfortable and stress-free as possible. Our patient-centered approach means that we prioritize your needs and preferences, and we strive to provide personalized care that meets your unique healthcare needs.
+            </p>
+            <a href="arunity/index.html" class="about"> <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa fa-simplybuilt"></i>Take A Virtual Tour</button></a>
+          </div>
+          <!-- <div class="col-lg-6 title-gif">
+            <img src="{{ url_for('static', filename='images/title-bg.svg') }}"/>
+          </div> -->
+      </div>
+      </div>
+      </section>
+
+         
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="price-text">OSCORP Services</h2>
+        <div class="col-lg-4">
+        <i class="fa-sharp fa-solid fa-circle-check text-color"></i>
+        <h3 class="feature-heading">Diagnostic Services.</h3>
+        </div>
+
+        <div class="col-lg-4">
+        <i class="fa-solid fa-bullseye text-color"></i>
+        <h3 class="feature-heading">Emergency Care</h3>
+        </div>
+
+        <div class="col-lg-4">
+        <i class="fa-solid fa-heart text-color fa-4x"></i>
+        <h3 class="feature-heading">Health care services</h3>
+        </div>
+
+      </div>
+   </div>
+  </section>
+
+
+  <!-- Services -->
+    <!-- <section class="coloured-section" id="testimonials">
+      <h2 class="price-text">OSCORP Services</h2>
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid" >
+          <h2 class="testimonial-text">Diagnostic Services</h2>
+          <img class="testimonial-image" src="{{ url_for('static', filename='images/dog-img.jpg') }}"/>
+          <em>Pebbles, New York</em>
+        </div>
+
+        <div class="carousel-item container-fluid" >
+          <h2 class="testimonial-text">Emergency Care</h2>
+          <img class="testimonial-image" src="{{ url_for('static', filename='images/lady-img.jpg') }}"/>
+          <em>Beverly, Illinois</em>
+        </div>
+      
+
+      <div class="carousel-item container-fluid" >
+        <h2 class="testimonial-text"> Health care services</h2>
+        <img class="testimonial-image" src="{{ url_for('static', filename='images/lady-img.jpg') }}"/>
+        <em>Beverly, Illinois</em>
+      </div>
+    
+
+      <div class="carousel-item container-fluid" >
+        <h2 class="testimonial-text">In-Patient Services</h2>
+        <img class="testimonial-image" src="{{ url_for('static', filename='images/lady-img.jpg') }}"/>
+        <em>Beverly, Illinois</em>
+      </div>
+  
+
+    <div class="carousel-item container-fluid" >
+      <h2 class="testimonial-text">Health Checkup services</h2>
+      <img class="testimonial-image" src="{{ url_for('static', filename='images/lady-img.jpg') }}"/>
+      <em>Beverly, Illinois</em>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>  
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>  
+  </button>
+
+</div>
+
+</section> -->
+
+
+  <!-- Pricing -->
+  
+  <section class="white-section" id="pricing">
+
+    <h2 class="price-text">OSCORP Packages</h2>
+    <!-- <p>Simple and affordable price plans for your and your dog.</p> -->
+
+    <div class="row">
+      <div class="pricing-col col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="price-heading">Basic Health Checkup Package</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 250</h2>
+            <p>Blood Sugar-Fasting</p>
+            <p>X-ray Chest</p>
+            <p>ECG</p>
+            <p>Ultrasound Study</p>
+            <p>Consultation</p>
+          </div>
+        </div>
+        </div>
+
+      <div class="pricing-col col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="price-heading">Essential Blood Tests <br> Package</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 500</h2>
+            <p>CBC</p>
+            <p>Blood Sugar-Fasting</p>
+            <p>Lipid Profile</p>
+            <p>Serum Uric Acid</p>
+            <p>Liver Function Tests</p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="pricing-col col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-heading">Complete Health Checkup Package</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">₹ 750</h2>
+              <p>PPBS</p>
+              <p>TMT or Echo</p>
+              <p>HbA1C</p>
+              <p>Ultrasound Study</p>
+              <p>Serum Creatinine</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="pricing-col col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="price-heading">Extented Health Checkup Package</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="price-text">₹ 1000</h2>
+                <p>TSH, T3, T4</p>
+                <p>HCV</p>
+                <p>GGT</p>
+                <p>Vitamin B12</p>
+                <p>Total Vitamin D3</p>
+              </div>
+            </div>
+            </div>
+    
+      </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="coloured-section" id="cta">
+
+    <div class="container-fluid">
+      <h3 class="big-heading">Experience healthcare from the comfort of your own home with our virtual hospital.</h3>
+      <a href="arunity/index.html"> <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa fa-simplybuilt"></i>Take A Virtual Tour</button></a>
+    </div>
+
+  </section>
+
+  <section id="chat-bot">
+
+    <div class="container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">Vision</h4>
+                      <p class="chatbox__description--header">Chat Support</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><img src="{{ url_for('static', filename='images/chatbotlogo.png') }}" /></button>
+          </div>
+      </div>
+  </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+        <i class="fa-brands fa-twitter footer-logo"></i>
+        <i class="fa-brands fa-facebook-f footer-logo"></i>
+        <i class="fa-brands fa-instagram footer-logo"></i>
+        <i class="fa-solid fa-envelope footer-logo"></i>
+    
+        <p class="copyright">© Copyright 2023 OSCORP City Hospital</p>
+    </div>
+
+  </footer>
+  <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
