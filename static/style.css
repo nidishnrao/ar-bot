@@ -87,6 +87,26 @@ h1,h2,h3,h4,h5,h6{
 .slide .nav-link{
     color: white;
 }
+.container{
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.container .tour {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 /* SECTION CONTAINERS  */
 .container-fluid{
     padding: 7% 15% !important;
@@ -231,8 +251,12 @@ button{
 
 /* FOOTER  */
 #cta{
-    background-color: white;
     color: black;
+}
+
+#footer{
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);  
 }
 
 .footer-logo{
@@ -240,30 +264,8 @@ button{
     font-size: 1.5rem;    
 }
 .copyright{
-    color:#8f8f8f;
+    color:#ffffff;
     font-size: 1.5rem;
-}
-
-/* MEDIA QUERY FOR DIFFERENT VIEWPORTS  */
-
-@media (max-width:990px){
-
-    #title{
-       text-align: center;
-    }
-
-    .title-image{
-        width : 50%;
-        position: static;
-    }
-
-    .navbar-nav{
-        background: #000000b8;
-        /* width: 36%;
-        position: absolute;
-        left: 35%; */
-        }
-
 }
 
 /* ChatBot Style */
@@ -291,6 +293,8 @@ button{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    bottom: -61px;
+    position: relative;
 }
 .chatbox__support {
     display: flex;
@@ -348,10 +352,12 @@ button{
 
 .messages__item--operator {
     margin-left: auto;
+    text-align: right;
 }
 
 .messages__item--visitor {
     margin-right: auto;
+    text-align: left;
 }
 
 /* FOOTER */
@@ -456,3 +462,26 @@ button{
 .chatbox__button img{
     width: 80%;
 }
+
+/* MEDIA QUERY FOR DIFFERENT VIEWPORTS  */
+
+@media (max-width:990px){
+
+    #title{
+       text-align: center;
+    }
+
+    .title-image{
+        width : 50%;
+        position: static;
+    }
+
+    .navbar-nav{
+        background: #000000b8;
+        /* width: 36%;
+        position: absolute;
+        left: 35%; */
+        }
+
+}
+
